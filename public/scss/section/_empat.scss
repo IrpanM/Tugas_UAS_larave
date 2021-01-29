@@ -1,0 +1,21 @@
+.empat {
+    .container {
+        .row {
+            .col {
+                .card {
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+
+                    .card-body {
+                        a {
+                            color: black;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

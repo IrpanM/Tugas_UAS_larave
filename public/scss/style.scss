@@ -1,0 +1,21 @@
+header {
+    .atas {
+        .container {
+            .d-flex {
+                .kanan {
+                    i {
+                        &:hover {
+                            color: blue;
+                            background: turquoise;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'section/tiga';
+@import 'section/empat';
+@import 'section/partner';
+@import 'section/footer';

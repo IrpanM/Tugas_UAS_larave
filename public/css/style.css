@@ -1,0 +1,65 @@
+header .atas .container .d-flex .kanan i:hover {
+  color: blue;
+  background: turquoise;
+}
+
+.tiga {
+  background: url(../img/hexagon.jpg) repeat;
+}
+
+.tiga .container {
+  color: #fff;
+}
+
+.tiga .container p {
+  font-size: 17px;
+}
+
+.empat .container .row .col .card img {
+  width: 300px;
+  height: 200px;
+}
+
+.empat .container .row .col .card .card-body a {
+  color: black;
+  font-weight: 500;
+}
+.partner{
+  margin-top: 500px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+
+
+.partner  .row .col img {
+  width: 150px;
+  opacity: 0.3;
+}
+
+.partner .row .col img:hover {
+  opacity: 1;
+}
+
+footer .atas {
+  border-bottom: 1px solid #494949;
+}
+
+footer .atas .container .row {
+  color: #858d91;
+}
+
+footer .atas .container .row .col h6 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer .atas .container .row .col a {
+  text-decoration: none;
+  color: #858d91;
+  display: inline-block;
+}
+
+footer .down {
+  border-bottom: 3px solid turquoise;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin panel($bg, $color, $width:300px, $height:200px) {
+    @extend %flex-center;
+    width: $width;
+    height: $height;
+    margin: 15px 30px;
+    background-color:$bg;
+    box-shadow: 0 10px 15px 0 $color;
+}

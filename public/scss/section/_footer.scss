@@ -1,0 +1,28 @@
+footer {
+    .atas {
+        border-bottom: 1px solid rgb(73, 73, 73);
+
+        .container {
+            .row {
+                color: #858d91;
+
+                .col {
+                    h6 {
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #858d91;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .down {
+        border-bottom: 3px solid turquoise;
+    }
+}

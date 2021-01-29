@@ -1,0 +1,16 @@
+.partner {
+    .container {
+        .row {
+            .col {
+                img {
+                    width: 150px;
+                    opacity: 0.3;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
