@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{url('css/gallery.css')}}">
     <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
     <script src="https://kit.fontawesome.com/1e09bce9fd.js" crossorigin="anonymous"></script>
-    <title>Tugas Framework</title>
+    <title>UAS Laravel</title>
 </head>
 
 <body>
@@ -34,6 +34,15 @@
                         <i class="fab fa-facebook-square p-2"></i>
                         <i class="fab fa-twitter-square p-2"></i>
                     </div>
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a class="my-auto mr-3 btn btn-primary" style="text-decoration: none;" href="{{ route('login') }}">Login</a>
+
+                        @if (Route::has('register'))
+                            <a class="my-auto btn btn-primary" style="text-decoration: none;" href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
                 </div>
             </div>
         </div>
@@ -157,19 +166,20 @@
         <div class="container">
             <h4 class="pl-3 mb-4">VIDEO TERBARU</h4>
             <div class="row mx-auto">
+            @foreach($video as $item)
                 <div class="col">
                     <div class="card" style="border: none;">
-                        <img src="img/juara3.png" alt="">
+                        <img src="{{Storage::url($item->image)}}" alt="">
                         <div class="card-body pl-0">
-                            <a href="">SMKN 1 - AERIAL FOOTAGE</a>
+                            <a href="">{{$item->title}}</a>
                             <blockquote class="blockquote mb-0">
-                                <footer class="blockquote-footer" style="font-size: 11px;">SABTU, 27 DESEMBER 2015 06:05
-                                    WIB</footer>
+                                <footer class="blockquote-footer" style="font-size: 11px;">{{$item->date}}</footer>
                             </blockquote>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+            @endforeach
+                <!-- <div class="col">
                     <div class="card" style="border: none;">
                         <img src="img/juara.gif" alt="">
                         <div class="card-body pl-0">
@@ -192,7 +202,7 @@
                             </blockquote>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>      
     </section>

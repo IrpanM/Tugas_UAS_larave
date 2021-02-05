@@ -32,6 +32,11 @@
             <i class="fas fa-fw fa-newspaper"></i>
             <span>info</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('video.index')}}">
+            <i class="fas fa-fw fa-newspaper"></i>
+            <span>Video</span></a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
